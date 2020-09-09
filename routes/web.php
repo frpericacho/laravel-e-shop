@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return View::make('layouts.welcome');
 });
 
+Route::view('sellers', 'layouts.sellers');
