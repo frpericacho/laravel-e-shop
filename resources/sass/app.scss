@@ -1,0 +1,28 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#navbar{
+  background-color: pink;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+#cuerpo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#footer{
+  background-color: pink;
+  margin-top: auto;
+}
+
+#top_seller{
+  background-color: rgb(141, 140, 140);
+}
