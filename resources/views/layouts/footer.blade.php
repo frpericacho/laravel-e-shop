@@ -6,7 +6,7 @@
   </style>
   <!-- ------------------------------------------------------------>
   <!--div class="jumbotron text-center" style="margin-bottom:0;padding:20px"> -->
-  <div class=" jumbotron text-md-left" style="background-color: pink;
+  <div class=" jumbotron text-md-left mb-0" style="background-color: pink;
       color: #000000;">
 
     <!-- Grid row -->

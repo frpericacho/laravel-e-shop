@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return View::make('layouts.welcome');
-});
+Route::get('/','ProductController@welcome')->name('home');
 
 Route::view('sellers', 'layouts.sellers');
