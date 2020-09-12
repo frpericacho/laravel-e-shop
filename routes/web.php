@@ -13,4 +13,6 @@
 
 Route::get('/','ProductController@welcome')->name('home');
 
-Route::view('sellers', 'layouts.sellers');
+//Route::view('sellers', 'product.detail');
+
+Route::get('/product/{product}', 'ProductController@detail')->name('product');

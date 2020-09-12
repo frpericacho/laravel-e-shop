@@ -12,4 +12,8 @@ class ProductController extends Controller
         $aProduct_new = Product::NewProducts();
         return view('layouts.welcome', compact('aProduct_offering','aProduct_new'));
     }
+
+    function detail(Product $product){
+        return view('product.detail',compact('product'));
+    }
 }

@@ -22,7 +22,7 @@
         <div class="col text-center">
                 <div class="card border-light mb-3">
 
-            <img class="card-img-top img1 " src={{"$Product_offering->imgurl"}} alt="Card image cap">
+            <a href="/product/{{"$Product_offering->id"}}"><img class="card-img-top img1" src="../{{"$Product_offering->imgurl"}}" alt="Card image cap"></a>
             <div class="card-body">
             <h5 class="card-title"> <b>{{"$ProductDiscountPrice"}} €</b></h5>
             @if($Product_offering->hasDiscount())
@@ -47,7 +47,7 @@
         @endif
     <div class="text-center col">
         <div class="card border-light mb-3">
-            <img class="card-img-top img1" src={{"$Product_new->imgurl"}} alt="Card image cap">
+            <a href="/product/{{"$Product_new->id"}}"><img class="card-img-top img1" src="../{{"$Product_new->imgurl"}}" alt="Card image cap"></a>
             <div class="card-body">
             <h5 class="card-title"><b>{{"$Product_new->price"}}€</b></h5>
             </div>
@@ -63,9 +63,9 @@
     </div>
 @endsection
 @section('top_sellers')
-    <h2>Lo mas vendido</h2>
+    <h2>Producto destacados</h2>
     <img class="img-fluid mt-2 mb-2" src="img/uno.png">
     <img class="img-fluid mt-2 mb-2" src="img/dos.jpg">
     <img class="img-fluid mt-2 mb-2" src="img/tres.jpg">
-    <a href="sellers" class="btn btn-primary" role="button">Los mas vendidos</a>
+    <a href="product" class="btn btn-primary" role="button">Los mas vendidos</a>
 @endsection

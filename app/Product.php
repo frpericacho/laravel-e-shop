@@ -18,6 +18,12 @@ class Product extends Model
             return false;
     }
 
+
+    public function Company()
+    {
+        return $this->belongsTo('App\Company')->get()->first()->name;
+    }
+    
     protected $table = 'Product';
     static function NewProducts()
     {

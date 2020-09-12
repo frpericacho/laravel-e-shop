@@ -13,8 +13,8 @@
         @include('layouts.header')
     </div>
 
-    <div class="row mt-5 mb-5 mx-auto">
-        @yield('cuerpo')
+    <div class="row mx-auto my-5">
+        @yield('center')
     </div>
 
 
