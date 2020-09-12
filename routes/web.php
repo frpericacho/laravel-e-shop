@@ -13,6 +13,6 @@
 
 Route::get('/','ProductController@welcome')->name('home');
 
-//Route::view('sellers', 'product.detail');
+Route::view('sellers', 'layouts.sellers');
 
 Route::get('/product/{product}', 'ProductController@detail')->name('product');

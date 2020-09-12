@@ -67,5 +67,5 @@
     <img class="img-fluid mt-2 mb-2" src="img/uno.png">
     <img class="img-fluid mt-2 mb-2" src="img/dos.jpg">
     <img class="img-fluid mt-2 mb-2" src="img/tres.jpg">
-    <a href="product" class="btn btn-primary" role="button">Los mas vendidos</a>
+    <a href="sellers" class="btn btn-primary" role="button">Los mas vendidos</a>
 @endsection
