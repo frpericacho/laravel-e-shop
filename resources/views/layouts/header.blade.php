@@ -12,5 +12,5 @@
     </form>
 
     <a class="navbar-text">Authentication</a>
-    <i class="fas fa-shopping-cart"></i>
+    <a class="navbar-brand" href="/cart"><i class="ml-3 fas fa-shopping-cart"></i></a>
 </nav>

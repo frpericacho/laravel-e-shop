@@ -13,20 +13,7 @@
         @include('layouts.header')
     </div>
 
-    <div class="row mt-3 mb-3 mx-auto">
-        <div class="col-9">
-            <div class="row mt-2 ml-2">
-                @yield('center')
-            </div>
-            <div class="row mt-2 ml-2">
-                @yield('prod')
-            </div>
-            <div class="col-3 my-auto top">
-                @yield('sidebar')
-            </div>
-        </div>
-    </div>
-
+    @yield('center')
 
     <div id="footer">
         @include('layouts.footer')

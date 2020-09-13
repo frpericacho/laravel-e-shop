@@ -1,7 +1,8 @@
 @extends('masters.master-seller')
 
 @section('center')
-    <h1>Ofertas del dia</h1>
+    
+    <h1>Productos destacados</h1>
     <div class="row text-center mx-auto" id="primera">
         <div class="col-4">
             <div class="card border-light">

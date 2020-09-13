@@ -2,18 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Product;
+use App\Cart;
+use Symfony\Component\HttpFoundation\Request;
 
 class ProductController extends Controller
 {
-    function welcome(){
+    function welcome()
+    {
+
         $aProduct_offering = Product::Offerings();
         $aProduct_new = Product::NewProducts();
-        return view('layouts.welcome', compact('aProduct_offering','aProduct_new'));
+        return view('layouts.welcome', compact('aProduct_offering', 'aProduct_new'));
+    }
+    function detail(Product $product)
+    {
+        return view('product.detail', compact('product'));
     }
 
-    function detail(Product $product){
-        return view('product.detail',compact('product'));
+    function addToCart(Product $product, Request $request)
+    {
+        $cart = new Cart($request->session()->get('cart', null));
+        $cart->add($product);
+        $request->session()->put('cart', $cart);
+        return redirect()->route('product', ['product' => $product->id]);
     }
 }
